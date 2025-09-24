@@ -1,4 +1,4 @@
-# General Purpose Agent(GPA) Qwen
+# Agenticpi
 
 ## Overview
 
@@ -8,7 +8,7 @@ This project builds an AI-powered multitalented agent that leverages LangChain t
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/dogman189/gpa-qwen.git
+    git clone https://github.com/dogman189/agenticpi.git
     cd gpa-qwen
     ```
 
@@ -88,6 +88,6 @@ See the `requirements.txt` file for the exact versions.
 
 ## License
 
-[Choose an appropriate license, e.g., MIT License]
+[Creative Commons v1.0]
 
 ---

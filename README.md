@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project builds an AI-powered multitalented agent that leverages LangChain to assist users in exploring topics and generating structured  outputs. It allows users to input research queries, and the agent will dynamically use various tools (search engine, Wikipedia, calculator, creativity and a text-saving functionality) to explore the topic and provide a structured response containing a summary, sources, and a record of tools used.  The output can also be saved to a text file.  The UI is built with Gradio.
+This project builds an AI-powered multitalented agent that leverages LangChain to assist users in exploring topics and generating structured  outputs. It allows users to input research queries, and the agent will dynamically use various tools (search engine, Wikipedia, calculator, creativity and a text-saving functionality) to explore the topic and provide a structured response containing a summary, sources, and a record of tools used.  The output can also be saved to a text file.  The UI is built with Gradio. App only supports Linux and MacOS for now.
 
 ## Installation
 
@@ -12,19 +12,13 @@ This project builds an AI-powered multitalented agent that leverages LangChain t
     cd gpa-qwen
     ```
 
-2.  **Create a Virtual Environment (Recommended):**
+2.  **Run Install Script:**
     ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Linux/macOS
-    # venv\Scripts\activate  # On Windows
+    sudo chmod +x install.sh
+    ./install.sh
     ```
 
-3. **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. **Environment Variables:**  The code uses environment variables for API keys.
+3. **Environment Variables:**  The code uses environment variables for API keys.
 
    *   **`API_KEY` (OpenAI):**  While currently configured to use Ollama, you might need to configure this depending on your OpenAI usage.  It may need to be changed to an OpenAI key if using a different LLM that requires it.
     *   **Ensure that an instance of `qwen3:1.7b` is running locally with your LLM server, or is available.  In this example, the code defaults to `http://localhost:11434/v1`

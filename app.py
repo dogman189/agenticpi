@@ -28,7 +28,7 @@ class TaskResponse(BaseModel):
 # Define the LLM
 llm = ChatOpenAI(
     api_key="none-needed",
-    model="qwen/qwen3-4b-thinking-2507",
+    model="deepseek-r1:1.5b",
     base_url="http://127.0.0.1:1234/v1",
     temperature=0.5,
     max_tokens=1000
@@ -186,8 +186,7 @@ theme = gr.themes.Soft(
 with gr.Blocks(theme=theme) as demo:
     gr.Markdown(
         """
-        # GPA-Qwen Enhanced
-        A versatile AI assistant for research, calculations, content generation, file reading, code execution, translation, and more. Enter your query, select tools, and upload files if needed.
+        # AgenticPi
         """
     )
     history = gr.State(value=[])
@@ -233,7 +232,7 @@ with gr.Blocks(theme=theme) as demo:
     gr.Markdown(
         """
         ---
-        *Powered by GPA-Qwen Enhanced | Version 1.0 *
+        *Powered by AgenticPi | Version 0.1 *
         """,
         elem_classes=["footer"]
     )

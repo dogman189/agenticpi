@@ -3,3 +3,4 @@ venv
 build
 dist
 agenticpi.icns
+tkapp.spec

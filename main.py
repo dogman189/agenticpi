@@ -5,6 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from tools import search_tool, wiki_tool, save_tool
+import ollama
 
 load_dotenv()
 
@@ -13,6 +14,16 @@ class ResearchResponse(BaseModel):
     summary: str
     sources: list[str]
     tools_used: list[str]
+
+print(ollama.list())
+while True:
+    if "qwen3:0.6b" in str(ollama.list()):
+        print("The selected model is available!")
+        break
+    else:
+        print("The selected model is not available!")
+        print("Downloading now")
+        ollama.pull("qwen3:0.6b")
 
 llm = ChatOpenAI(
     api_key="ollama",

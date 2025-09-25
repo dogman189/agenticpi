@@ -12,3 +12,5 @@ sympy
 pint
 pytz
 ddgs
+tk
+dotenv

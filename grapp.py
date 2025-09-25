@@ -28,8 +28,8 @@ class TaskResponse(BaseModel):
 # Define the LLM
 llm = ChatOpenAI(
     api_key="none-needed",
-    model="qwen/qwen3-4b-thinking-2507",
-    base_url="http://127.0.0.1:1234/v1",
+    model="qwen3:0.6b",
+    base_url="http://127.0.0.1:11434/v1",
     temperature=0.5,
     max_tokens=1000
 )

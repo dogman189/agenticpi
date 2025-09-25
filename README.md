@@ -21,13 +21,13 @@ This project builds an AI-powered multitalented agent that leverages LangChain t
 3. **Environment Variables:**  The code uses environment variables for API keys.
 
    *   **`API_KEY` (OpenAI):**  While currently configured to use Ollama, you might need to configure this depending on your OpenAI usage.  It may need to be changed to an OpenAI key if using a different LLM that requires it.
-    *   **Ensure that an instance of `qwen3:1.7b` is running locally with your LLM server, or is available.  In this example, the code defaults to `http://localhost:11434/v1`
+    *   **Ensure that an instance of `qwen3:0.6b` is running locally with your LLM server, or is available.  In this example, the code defaults to `http://localhost:11434/v1`
 
 ## Usage
 
 1.  **Run the Gradio Interface:**
     ```bash
-    python app.py
+    python grapp.py
     ```
 
 2.  **Access the Interface:**  Open your web browser and go to the address printed by the `gradio_interface`.  Typically, it will be something like `http://localhost:7860`.
@@ -39,8 +39,8 @@ This project builds an AI-powered multitalented agent that leverages LangChain t
     *   **Summary:** A concise summary of the topic.
     *   **Sources:** A list of sources used for research.
     *   **Tools Used:** A record of the tools employed (e.g., search engine, Wikipedia).
-
-5. **Saving Research:**  The agent automatically saves the detailed research result to a file named `research_output.txt`. Each new result will be appended to the file with a timestamp.
+## Build App
+1. **todo**
 
 ## Code Structure
 
